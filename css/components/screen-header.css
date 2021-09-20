@@ -1,0 +1,46 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--horizontal-space);
+  margin-bottom: 15px;
+}
+
+.screen-header__title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.screen-header__icons span {
+  margin-left: 25px;
+}
+
+.screen-header__icons span:last-child {
+  position: relative;
+}
+
+.screen-header__icons span:last-child {
+  position: relative;
+}
+
+.screen-header__icons span:last-child span {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+}
+
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.screen-header__icons i:hover {
+  will-change: transform;
+  animation: rotate-center 0.5s ease-in-out infinite;
+}
